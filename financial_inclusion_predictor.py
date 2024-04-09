@@ -2,8 +2,8 @@ import pandas as pd
 import streamlit as st
 import pickle
 from PIL import Image
-img = Image.open("C:\\Users\\hp\\Downloads\\fin_inclusion.jpeg")
-model = pickle.load(open("C:\\Users\\hp\\Downloads\\fin_inc.pkl","rb"))
+img = Image.open("fin_inclusion.jpeg")
+model = pickle.load(open("fin_inc.pkl","rb"))
 st.header("Financial Inclusion App")
 st.image(img)
 st.sidebar.header("Individual's metrics")
